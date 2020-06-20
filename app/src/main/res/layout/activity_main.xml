@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/listRawon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gambar_rawon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/rawon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/gambar_rawon"
+                android:layout_toRightOf="@id/gambar_rawon"
+                android:orientation="vertical">
+
+               <TextView
+                    android:id="@+id/nama_rawon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/string_nama_rawon" />
+
+                <TextView
+                    android:id="@+id/detail_rawon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/string_detail_rawon" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listPecel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gambar_pecel"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/pecel"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/gambar_pecel"
+                android:layout_toRightOf="@id/gambar_pecel"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nama_pecel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/string_nama_pecel" />
+
+                <TextView
+                    android:id="@+id/detail_pecel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/string_detail_pecel" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listSateponorogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gambar_sateponorogo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/sateponorogo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/gambar_sateponorogo"
+                android:layout_toRightOf="@id/gambar_sateponorogo"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nama_sateponorogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/string_nama_sateponorogo" />
+
+                <TextView
+                    android:id="@+id/detail_sateponorogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/string_detail_sateponorogo" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listTahucampur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gambar_tahucampur"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/tahucampur"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/gambar_tahucampur"
+                android:layout_toRightOf="@id/gambar_tahucampur"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nama_tahucampur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/string_nama_tahucampur" />
+
+                <TextView
+                    android:id="@+id/detail_tahucampur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/string_detail_tahucampur" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listRujakcingur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gambar_rujakcingur"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/rujakcingur"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/gambar_rujakcingur"
+                android:layout_toRightOf="@id/gambar_rujakcingur"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nama_rujakcingur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/string_nama_rujakcingur" />
+
+                <TextView
+                    android:id="@+id/detail_rujakcingur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/string_detail_rujakcingur" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listSotokediri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gambar_sotokediri"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/sotokediri"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/gambar_sotokediri"
+                android:layout_toRightOf="@id/gambar_sotokediri"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nama_sotokediri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/string_nama_sotokediri" />
+
+                <TextView
+                    android:id="@+id/detail_sotokediri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/string_detail_sotokediri" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listSotoambengan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gambar_sotoambengan"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/sotoambengan"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/gambar_sotoambengan"
+                android:layout_toRightOf="@id/gambar_sotoambengan"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nama_sotoambengan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/string_nama_sotoambengan" />
+
+                <TextView
+                    android:id="@+id/detail_sotoambengan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/string_detail_sotoambengan" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listRambakpetis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gambar_rambakpetis"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/rambakpetis"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/gambar_rambakpetis"
+                android:layout_toRightOf="@id/gambar_rambakpetis"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nama_rambakpetis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/string_nama_rambakpetis" />
+
+                <TextView
+                    android:id="@+id/detail_rambakpetis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/string_detail_rambakpetis" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listOndeonde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gambar_ondeonde"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ondeonde"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/gambar_ondeonde"
+                android:layout_toRightOf="@id/gambar_ondeonde"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nama_ondeonde"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/string_nama_ondeonde" />
+
+                <TextView
+                    android:id="@+id/detail_ondeonde"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/string_detail_ondeonde" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listbaksomalang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gambar_baksomalang"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/baksomalang"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/gambar_baksomalang"
+                android:layout_toRightOf="@id/gambar_baksomalang"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nama_baksomalang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/string_nama_baksomalang" />
+
+                <TextView
+                    android:id="@+id/detail_baksomalang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/string_detail_baksomalang" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listNasibebek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gambar_nasibebek"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/nasibebek"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/gambar_nasibebek"
+                android:layout_toRightOf="@id/gambar_nasibebek"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nama_nasibebek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/string_nama_nasibebek" />
+
+                <TextView
+                    android:id="@+id/detail_nasibebek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/string_detail_nasibebek" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/about_tentang"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="@string/about"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textSize="24dp"/>
+    </LinearLayout>
+</ScrollView>
